@@ -1,6 +1,24 @@
+"use client";
+import { useEffect, useState } from 'react';
+
 export default function Hero() {
+    const [minHeight, setMinHeight] = useState('130vh');
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.matchMedia('(min-width: 640px)').matches) {
+                setMinHeight('100vh');
+            } else {
+                setMinHeight('130vh');
+            }
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+        <section id="home" className="flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 mt-6 sm" style={{ minHeight }}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className="space-y-8">
                     {/* Profile Image */}
@@ -9,7 +27,7 @@ export default function Hero() {
                             <img
                                 src="/avatar.png"
                                 alt="Avatar"
-                                className="w-full h-full object-contain rounded-full"
+                                className="w-full h-full object-cover object-top rounded-full"
                                 style={{ aspectRatio: "1/1", background: 'white' }}
                             />
                         </div>

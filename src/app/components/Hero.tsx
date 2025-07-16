@@ -8,8 +8,6 @@ export default function Hero() {
         const handleResize = () => {
             if (window.matchMedia('(min-width: 640px)').matches) {
                 setMinHeight('100vh');
-            } else {
-                setMinHeight('130vh');
             }
         };
         handleResize();

@@ -5,7 +5,9 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-8">
                     {/* Brand */}
                     <div className="md:col-span-2">
-                        <h3 className="text-2xl font-bold mb-4">Zaki Maliki</h3>
+                        <div className="flex items-center mb-4">
+                            <img src="/logo.png" alt="ZM Logo" className="h-8 w-auto mr-2" />
+                        </div>
                         <p className="text-gray-400 mb-6 max-w-md">
                             A passionate full-stack developer creating beautiful and functional digital experiences.
                             Let's build something amazing together.

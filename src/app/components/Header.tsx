@@ -15,7 +15,9 @@ export default function Header() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <h1 className="text-2xl font-bold text-gray-900">Portfolio</h1>
+                        <a href="#home">
+                            <img src="/logo.png" alt="ZM Logo" className="h-10 w-auto" />
+                        </a>
                     </div>
 
                     {/* Desktop Navigation */}

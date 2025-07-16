@@ -19,7 +19,7 @@ export default function Header() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex space-x-8">
+                    <nav className="hidden md:flex space-x-8 items-center">
                         <a href="#home" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
                             Home
                         </a>
@@ -32,6 +32,7 @@ export default function Header() {
                         <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
                             Contact
                         </a>
+                        {/* Social Links */}
                     </nav>
 
                     {/* Mobile menu button */}
@@ -67,6 +68,7 @@ export default function Header() {
                             <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200">
                                 Contact
                             </a>
+                            {/* Social Links Mobile */}
                         </div>
                     </div>
                 )}

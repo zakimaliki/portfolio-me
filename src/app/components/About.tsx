@@ -14,6 +14,12 @@ export default function About() {
 
     const experiences = [
         {
+            title: 'Back End Developer',
+            company: 'Integrasi Logistik Cipta Solusi (ILCS)',
+            period: 'Nov 2024 - May 2025',
+            description: 'As a Backend Developer at Integrasi Logistik Cipta Solusi (ILCS), I contributed to the YMS project by developing and maintaining backend systems using Golang. My responsibilities included optimizing database queries to enhance performance, designing Technical Requirement Documents (TRD) to ensure clear project documentation, and creating unit tests to improve code reliability and quality.'
+        },
+        {
             title: 'Academic Coding Instructor (Fullstack Website)',
             company: 'Pijar Camp',
             period: 'Mar 2022 - Present',

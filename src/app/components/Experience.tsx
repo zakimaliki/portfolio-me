@@ -98,39 +98,42 @@ export default function Experience() {
     };
 
     return (
-        <section id="experience" className="py-20 bg-gray-50">
+        <section id="experience" className="py-20 sm:py-28 md:py-32 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-16 sm:mb-20">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                         Professional Experience
                     </h2>
-                    <p className="text-lg text-gray-600">
-                        My career journey in web development and education
+                    <div className="h-1 w-16 bg-blue-600 mx-auto mb-6"></div>
+                    <p className="text-base sm:text-lg text-gray-600">
+                        My career journey in web development, education, and technology
                     </p>
                 </div>
 
                 {/* Timeline */}
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                     {experiences.map((exp, index) => (
                         <div
                             key={index}
-                            className="bg-white border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:border-blue-400 hover:shadow-md"
+                            className="bg-gray-50 hover:bg-white border border-gray-200 hover:border-blue-400 rounded-lg sm:rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg"
                         >
                             {/* Header - Always Visible */}
                             <button
                                 onClick={() => toggleExpand(index)}
-                                className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                                className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between hover:bg-white transition-colors"
                             >
                                 <div className="text-left flex-grow">
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                                    <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors line-clamp-2">
                                         {exp.title}
                                     </h3>
-                                    <p className="text-sm text-gray-600">
-                                        {exp.company} • {exp.period}
+                                    <p className="text-xs sm:text-sm text-gray-600">
+                                        <span className="font-semibold text-gray-900">{exp.company}</span>
+                                        <span className="mx-2">•</span>
+                                        <span className="text-gray-600">{exp.period}</span>
                                     </p>
                                 </div>
                                 <svg
-                                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 flex-shrink-0 ml-4 ${
+                                    className={`w-5 h-5 text-blue-600 transition-transform duration-300 flex-shrink-0 ml-4 ${
                                         expandedIndex === index ? 'transform rotate-180' : ''
                                     }`}
                                     fill="none"
@@ -143,8 +146,8 @@ export default function Experience() {
 
                             {/* Expanded Content */}
                             {expandedIndex === index && (
-                                <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                                    <p className="text-gray-700 leading-relaxed">
+                                <div className="px-4 sm:px-6 py-4 sm:py-5 bg-white border-t border-blue-200">
+                                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                                         {exp.description}
                                     </p>
                                 </div>

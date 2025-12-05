@@ -85,13 +85,14 @@ export default function Posts() {
 
     if (loading) {
         return (
-            <section id="posts" className="py-20 bg-gray-50">
+            <section id="posts" className="py-20 sm:py-28 md:py-32 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    <div className="text-center mb-16 sm:mb-20">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                             My Blog Posts
                         </h2>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                        <div className="h-1 w-16 bg-blue-600 mx-auto mb-6"></div>
+                        <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
                             Loading posts from Medium...
                         </p>
                     </div>
@@ -104,59 +105,72 @@ export default function Posts() {
     }
 
     return (
-        <section id="posts" className="py-20 bg-gray-50">
+        <section id="posts" className="py-20 sm:py-28 md:py-32 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                <div className="text-center mb-16 sm:mb-20">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                         My Blog Posts
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    <div className="h-1 w-16 bg-blue-600 mx-auto mb-6"></div>
+                    <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
                         Thoughts, tutorials, and insights about web development, programming, and technology.
                     </p>
                     {error && (
-                        <p className="text-red-600 mt-2 text-sm">
+                        <p className="text-amber-600 mt-3 text-sm">
                             {error} - Showing sample posts below
                         </p>
                     )}
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {posts.map((post, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <a
+                            key={index}
+                            href={post.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group h-full bg-white rounded-xl border border-gray-200 hover:border-blue-400 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-95 flex flex-col"
+                        >
                             {/* Post Image */}
-                            <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                            <div className="h-40 sm:h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center overflow-hidden">
                                 {post.thumbnail ? (
                                     <img
                                         src={post.thumbnail}
                                         alt={post.title}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                     />
                                 ) : (
-                                    <span className="text-6xl">📝</span>
+                                    <span className="text-4xl sm:text-6xl">📝</span>
                                 )}
                             </div>
 
                             {/* Post Content */}
-                            <div className="p-6">
-                                <div className="flex items-center text-sm text-gray-500 mb-3">
+                            <div className="p-4 sm:p-6 flex-grow flex flex-col">
+                                {/* Date */}
+                                <div className="flex items-center text-xs sm:text-sm text-gray-500 mb-3">
+                                    <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/>
+                                    </svg>
                                     <span>{post.pubDate}</span>
                                 </div>
 
-                                <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">
+                                {/* Title */}
+                                <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
                                     {post.title}
                                 </h3>
 
-                                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+                                {/* Description */}
+                                <p className="text-sm text-gray-600 leading-relaxed mb-4 flex-grow line-clamp-3">
                                     {post.description}
                                 </p>
 
                                 {/* Categories */}
                                 {post.categories.length > 0 && (
-                                    <div className="flex flex-wrap gap-2 mb-6">
-                                        {post.categories.slice(0, 3).map((category, catIndex) => (
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {post.categories.slice(0, 2).map((category, catIndex) => (
                                             <span
                                                 key={catIndex}
-                                                className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"
+                                                className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"
                                             >
                                                 {category}
                                             </span>
@@ -165,30 +179,26 @@ export default function Posts() {
                                 )}
 
                                 {/* Read More Link */}
-                                <div className="flex gap-3">
-                                    <a
-                                        href={post.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg text-sm font-medium transition-colors duration-200"
-                                    >
-                                        Read on Medium
-                                    </a>
+                                <div className="inline-flex items-center text-blue-600 font-semibold text-sm group-hover:text-blue-800 transition-all duration-300">
+                                    Read Article
+                                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                    </svg>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
 
                 {/* View More Button */}
-                <div className="text-center mt-12">
-                    <a
-                        href={`https://medium.com/@${USERNAME}`}
+                <div className="text-center mt-12 sm:mt-16">
+                    <a 
+                        href="https://medium.com/@zakimaliki"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 inline-block"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
                     >
-                        View All Posts on Medium
+                        View More Articles on Medium
                     </a>
                 </div>
             </div>

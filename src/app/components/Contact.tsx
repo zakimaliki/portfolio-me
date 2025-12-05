@@ -63,8 +63,8 @@ export default function Contact() {
                     {/* Meeting (kiri) */}
                     <div className="flex flex-col justify-start items-center lg:items-start h-full">
                         <div className="text-center lg:text-left w-full mt-0 flex flex-col justify-start h-full">
-                            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Ingin Diskusi atau Meeting?</h3>
-                            <p className="mb-4 text-gray-600">Jadwalkan pertemuan dengan saya secara langsung melalui Calendly.</p>
+                            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Want to Discuss or Meet?</h3>
+                            <p className="mb-4 text-gray-600">Schedule a meeting with me directly through Calendly.</p>
                             <div className="flex justify-center lg:justify-start">
                                 <a
                                     href="https://calendly.com/malikizakitop/30min"
@@ -72,7 +72,7 @@ export default function Contact() {
                                     rel="noopener noreferrer"
                                     className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition w-fit"
                                 >
-                                    Jadwalkan Meeting via Calendly
+                                    Schedule Meeting via Calendly
                                 </a>
                             </div>
                         </div>

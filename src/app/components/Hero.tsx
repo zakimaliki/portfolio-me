@@ -52,7 +52,13 @@ export default function Hero() {
                             View My Work
                         </button>
                         <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-                            Download CV
+                            <a
+                                href="/CV.pdf"
+                                download
+                                className="block w-full h-full text-blue-600 hover:text-white"
+                            >
+                                Download CV
+                            </a>
                         </button>
                     </div>
 

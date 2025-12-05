@@ -28,6 +28,12 @@ export default function Header() {
                         <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
                             About
                         </a>
+                        <a href="#projects" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                            Projects
+                        </a>
+                        <a href="#experience" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                            Experience
+                        </a>
                         <a href="#posts" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
                             Posts
                         </a>
@@ -63,6 +69,12 @@ export default function Header() {
                             </a>
                             <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200">
                                 About
+                            </a>
+                            <a href="#projects" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                                Projects
+                            </a>
+                            <a href="#experience" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                                Experience
                             </a>
                             <a href="#posts" className="block px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200">
                                 Posts

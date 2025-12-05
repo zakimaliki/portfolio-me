@@ -45,8 +45,18 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#posts" className="text-gray-400 hover:text-white transition-colors duration-200">
+                                <a href="#projects" className="text-gray-400 hover:text-white transition-colors duration-200">
                                     Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#experience" className="text-gray-400 hover:text-white transition-colors duration-200">
+                                    Experience
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#posts" className="text-gray-400 hover:text-white transition-colors duration-200">
+                                    Posts
                                 </a>
                             </li>
                             <li>
@@ -69,24 +79,10 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                    <p className="text-gray-400 text-sm">
+                <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col justify-center items-center">
+                    <p className="text-gray-400 text-sm text-center">
                         © 2025 Zaki Maliki. All rights reserved.
                     </p>
-                    <div className="flex space-x-6 mt-4 md:mt-0 items-center">
-                        <a href="https://linkedin.com/in/zaki-maliki-b6a798168" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/zakimaliki" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                            GitHub
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                            Privacy Policy
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
-                            Terms of Service
-                        </a>
-                    </div>
                 </div>
             </div>
         </footer>

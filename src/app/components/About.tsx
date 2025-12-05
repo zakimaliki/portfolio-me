@@ -17,11 +17,11 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16 sm:mb-20">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-                        About Me
+                        About This Web Developer
                     </h2>
                     <div className="h-1 w-16 bg-blue-600 mx-auto mb-6"></div>
                     <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        I am a Web Developer specializing in frontend development with expertise in building modern, responsive, and user-friendly web applications. My journey combines education technology passion with clean code practices.
+                        I am a passionate Web Developer specializing in frontend development with extensive expertise in building modern, responsive, and user-friendly web applications. My journey as a professional web developer combines education technology passion with clean code practices and innovative solutions.
                     </p>
                 </div>
 
@@ -30,16 +30,16 @@ export default function About() {
                     <div className="space-y-6 sm:space-y-8">
                         <div>
                             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-                                My Journey
+                                Web Developer Journey & Experience
                             </h3>
                             <p className="text-gray-600 leading-relaxed mb-4">
-                                I started my journey in educational technology with a passion for making learning more accessible and engaging. What began as curiosity quickly transformed into a mission to revolutionize the learning experience through technology.
+                                I started my journey in educational technology with a passion for making learning more accessible and engaging. As a web developer, what began as curiosity quickly transformed into a mission to revolutionize the learning experience through innovative web development and technology solutions.
                             </p>
                             <p className="text-gray-600 leading-relaxed mb-4">
-                                I believe in creating educational tools that are not only functional but also intuitive and engaging. Every project is an opportunity to make learning more effective, accessible, and enjoyable for students of all ages.
+                                Throughout my career as a professional web developer, I believe in creating educational tools that are not only functional but also intuitive and engaging. Every project is an opportunity to make learning more effective, accessible, and enjoyable for students of all ages through modern web development practices.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                                When I'm not developing, I'm researching new methodologies, collaborating with educators, or exploring emerging technologies that can transform education.
+                                When I'm not developing web applications, I'm researching new web development methodologies, collaborating with educators and product teams, or exploring emerging technologies that can transform education and enhance digital experiences.
                             </p>
                         </div>
 
@@ -63,7 +63,7 @@ export default function About() {
                     {/* Skills */}
                     <div className="space-y-6 sm:space-y-8">
                         <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                            Skills & Technologies
+                            Web Development Skills & Technologies
                         </h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                             {skills.map((skill, index) => (

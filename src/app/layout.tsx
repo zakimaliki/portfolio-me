@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portofolio Zaki Maliki",
-  description: "Selamat datang di portofolio Zaki Maliki. Temukan proyek, pengalaman, dan informasi kontak saya di sini.",
+  title: "Web Developer Portfolio - Zaki Maliki | Frontend & EdTech",
+  description: "Welcome to Web Developer Zaki Maliki's portfolio. Explore frontend development projects, web development experience, and professional services. Contact me for web development solutions.",
 };
 
 export default function RootLayout({

@@ -88,12 +88,9 @@ export default function Footer() {
 
                 {/* Divider */}
                 <div className="border-t border-gray-800 pt-8 sm:pt-10">
-                    <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                        <p className="text-gray-400 text-sm">
+                    <div className="flex justify-center items-center">
+                        <p className="text-gray-400 text-sm text-center">
                             © {currentYear} Zaki Maliki. All rights reserved.
-                        </p>
-                        <p className="text-gray-400 text-sm">
-                            Crafted with <span className="text-red-500">❤️</span> and coffee
                         </p>
                     </div>
                 </div>

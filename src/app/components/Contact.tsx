@@ -59,44 +59,44 @@ export default function Contact() {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
                     {/* Left Section - Quick Actions */}
-                    <div className="space-y-6 sm:space-y-8">
-                        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 border border-gray-200">
-                            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
+                    <div className="space-y-4 sm:space-y-6">
+                        <div className="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border border-gray-200">
+                            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 lg:mb-6">
                                 Let's Schedule a Meeting
                             </h3>
-                            <p className="text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+                            <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 lg:mb-8 leading-relaxed">
                                 The best way to discuss opportunities is through a direct conversation. Book a time that works best for you!
                             </p>
                             <a
                                 href="https://calendly.com/malikizakitop/30min"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
+                                className="inline-block w-full sm:w-auto text-center bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 text-sm sm:text-base"
                             >
                                 Schedule on Calendly
                             </a>
                         </div>
 
                         {/* Contact Methods */}
-                        <div className="space-y-4">
+                        <div className="space-y-3 sm:space-y-4">
                             {contactInfo.map((info, index) => (
                                 <a
                                     key={index}
                                     href={info.link}
-                                    className="flex items-start gap-4 p-4 sm:p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-300 group"
+                                    className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 lg:p-5 bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-300 group"
                                 >
-                                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 transition-colors duration-300">
-                                        <span className="text-xl sm:text-2xl">{info.icon}</span>
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 transition-colors duration-300">
+                                        <span className="text-lg sm:text-xl">{info.icon}</span>
                                     </div>
                                     <div className="flex-grow min-w-0">
-                                        <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">{info.title}</h4>
-                                        <p className="text-blue-600 font-medium text-sm sm:text-base hover:text-blue-700 break-all">
+                                        <h4 className="text-sm sm:text-base font-semibold text-gray-900 mb-1">{info.title}</h4>
+                                        <p className="text-blue-600 font-medium text-xs sm:text-sm hover:text-blue-700 break-all">
                                             {info.value}
                                         </p>
                                     </div>
-                                    <svg className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                     </svg>
                                 </a>
@@ -105,11 +105,11 @@ export default function Contact() {
                     </div>
 
                     {/* Right Section - Social Links */}
-                    <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 border border-gray-200">
-                        <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
+                    <div className="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border border-gray-200">
+                        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 lg:mb-8">
                             Connect With Me
                         </h3>
-                        <p className="text-gray-600 mb-8 leading-relaxed">
+                        <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                             Follow my latest updates and projects on social media. Let's build something amazing together!
                         </p>
                         

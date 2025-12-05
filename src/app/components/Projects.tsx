@@ -47,46 +47,46 @@ export default function Projects() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
                     {projects.map((project, index) => (
                         <a
                             key={index}
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group h-full bg-white rounded-xl border border-gray-200 hover:border-blue-400 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 active:scale-95"
+                            className="group h-full bg-white rounded-lg sm:rounded-xl border border-gray-200 hover:border-blue-400 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 active:scale-95 flex flex-col"
                         >
                             {/* Project Header with Icon */}
-                            <div className="relative h-32 sm:h-40 bg-gradient-to-br from-blue-50 to-indigo-50 border-b border-gray-100 flex items-center justify-center overflow-hidden group-hover:from-blue-100 group-hover:to-indigo-100 transition-all duration-300">
-                                <span className="text-5xl sm:text-6xl">{project.icon}</span>
+                            <div className="relative h-24 sm:h-32 md:h-40 bg-gradient-to-br from-blue-50 to-indigo-50 border-b border-gray-100 flex items-center justify-center overflow-hidden group-hover:from-blue-100 group-hover:to-indigo-100 transition-all duration-300 flex-shrink-0">
+                                <span className="text-4xl sm:text-5xl md:text-6xl">{project.icon}</span>
                                 <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-r from-blue-600 to-indigo-600 transition-opacity duration-300"></div>
                             </div>
 
                             {/* Project Content */}
-                            <div className="p-5 sm:p-6 lg:p-7 h-full flex flex-col">
+                            <div className="p-4 sm:p-5 lg:p-6 flex-grow flex flex-col">
                                 {/* Category Badge */}
-                                <div className="mb-4">
-                                    <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm font-semibold rounded-full hover:bg-blue-200 transition-colors duration-300">
+                                <div className="mb-2 sm:mb-3">
+                                    <span className="inline-block px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full hover:bg-blue-200 transition-colors duration-300">
                                         {project.category}
                                     </span>
                                 </div>
 
                                 {/* Title */}
-                                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2">
+                                <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300 line-clamp-2">
                                     {project.title}
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 flex-grow line-clamp-3">
+                                <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 flex-grow line-clamp-2 sm:line-clamp-3">
                                     {project.description}
                                 </p>
 
                                 {/* Tags */}
-                                <div className="flex flex-wrap gap-2 mb-4">
+                                <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
                                     {project.tags.map((tag, tagIndex) => (
                                         <span 
                                             key={tagIndex}
-                                            className="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 transition-colors duration-300"
+                                            className="text-xs px-2 py-0.5 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 transition-colors duration-300"
                                         >
                                             {tag}
                                         </span>
@@ -94,9 +94,9 @@ export default function Projects() {
                                 </div>
 
                                 {/* CTA Link */}
-                                <div className="inline-flex items-center text-blue-600 font-semibold text-sm sm:text-base group-hover:text-blue-800 transition-all duration-300">
+                                <div className="inline-flex items-center text-blue-600 font-semibold text-xs sm:text-sm group-hover:text-blue-800 transition-all duration-300">
                                     Visit Project
-                                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                     </svg>
                                 </div>

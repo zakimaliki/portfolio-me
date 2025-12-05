@@ -2,25 +2,25 @@ export default function Projects() {
     const projects = [
         {
             title: 'Sistem Informasi Madrasah',
-            description: 'Sistem informasi terintegrasi untuk manajemen madrasah dengan fitur administrasi, pembelajaran, dan pelaporan.',
+            description: 'An integrated information system for Islamic school management with features for administration, learning, and reporting.',
             link: 'https://sistem-informasi-madrasah.vercel.app/',
             category: 'Full-Stack Web Application'
         },
         {
             title: 'Lifetime Art',
-            description: 'Platform galeri seni digital yang menampilkan karya seniman dengan fitur penjualan dan kurasi koleksi.',
+            description: 'A digital art gallery platform showcasing artworks with selling features and collection curation capabilities.',
             link: 'https://lifetimeart.vercel.app/',
             category: 'E-Commerce Platform'
         },
         {
             title: 'Warkop AI',
-            description: 'Aplikasi percakapan berbasis AI untuk pengalaman warung kopi digital yang interaktif dan menyenangkan.',
+            description: 'An AI-powered conversation application providing an interactive and enjoyable digital coffee shop experience.',
             link: 'https://warkop-ai.vercel.app/',
             category: 'AI-Powered Application'
         },
         {
             title: 'Pijar',
-            description: 'Platform pembelajaran digital untuk mendukung proses belajar mengajar yang inovatif dan efektif.',
+            description: 'A digital learning platform designed to support innovative and effective teaching and learning processes.',
             link: 'https://pijar.vercel.app/',
             category: 'E-Learning Platform'
         }

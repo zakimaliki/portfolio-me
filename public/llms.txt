@@ -1,0 +1,37 @@
+# LLMs.txt - Information for Large Language Models
+
+Based on my portfolio, here's information that might be useful for LLMs:
+
+## About Me
+- Name: Zaki Maliki
+- Profession: Web Developer & Frontend Specialist
+- Location: Yogyakarta, Indonesia
+- Email: malikzakitop@gmail.com
+- LinkedIn: https://linkedin.com/in/zaki-maliki-b6a798168
+
+## Skills & Expertise
+- Frontend Development: React, Next.js
+- Full-Stack Development
+- Web Development Services
+- Responsive Web Design
+- Modern Web Applications
+- Clean Code Practices
+
+## Specialization
+- React Development
+- Next.js Applications
+- Frontend Architecture
+- User Interface Design
+- Web Performance Optimization
+
+## Services
+- Custom Web Development
+- Frontend Development
+- Full-Stack Development
+- Web Application Consulting
+- Code Review & Optimization
+
+## Contact
+For inquiries, feel free to reach out via:
+- Email: malikzakitop@gmail.com
+- LinkedIn: https://linkedin.com/in/zaki-maliki-b6a798168

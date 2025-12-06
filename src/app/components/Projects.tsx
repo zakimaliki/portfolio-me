@@ -31,6 +31,14 @@ export default function Projects() {
             category: 'E-Learning Platform',
             icon: '📚',
             tags: ['EdTech', 'Learning', 'Full-Stack']
+        },
+        {
+            title: 'Zero Editor',
+            description: 'A powerful and intuitive code editor designed for modern development with clean syntax highlighting and real-time collaboration features.',
+            link: 'https://zero-editor.vercel.app/',
+            category: 'Developer Tool',
+            icon: '📝',
+            tags: ['Code Editor', 'Developer Tools', 'Web App']
         }
     ];
 
